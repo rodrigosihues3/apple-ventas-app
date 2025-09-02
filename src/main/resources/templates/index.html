@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store - iPhone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Custom Apple Theme CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-apple-primary" href="#">AppleStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-apple-secondary" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-apple-secondary" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-apple-secondary" href="#">Ofertas</a></li>
+                        <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Comprar ahora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center mt-5">
+        <div class="container">
+            <h1 class="hero-title">El futuro en tus manos</h1>
+            <p class="hero-subtitle">Descubre la nueva generación de iPhones, con el diseño elegante y el rendimiento
+                que solo Apple puede ofrecer.</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Nuestros iPhones</h2>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-yellow-select-202303"
+                            alt="iPhone 15 Pro" class="product-image">
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-price">$999</p>
+                        <a href="#" class="btn btn-primary w-100">Comprar</a>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-yellow-select-202303"
+                            alt="iPhone 15" class="product-image">
+                        <h3 class="product-title">iPhone 15</h3>
+                        <p class="product-price">$799</p>
+                        <a href="#" class="btn btn-primary w-100">Comprar</a>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-yellow-select-202303"
+                            alt="iPhone 14" class="product-image">
+                        <h3 class="product-title">iPhone 14</h3>
+                        <p class="product-price">$699</p>
+                        <a href="#" class="btn btn-primary w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-5 bg-apple-gray">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">¿Por qué elegirnos?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4 class="mb-3">📦 Envío Gratis</h4>
+                        <p class="text-apple-secondary">Recibe tu iPhone en casa sin costo adicional en todo el país.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4 class="mb-3">💳 Pago Seguro</h4>
+                        <p class="text-apple-secondary">Transacciones cifradas y seguras con múltiples métodos de pago.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4 class="mb-3">🔄 Garantía Oficial</h4>
+                        <p class="text-apple-secondary">Todos los productos cuentan con garantía original de Apple.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-apple-secondary border-top">
+        <div class="container">
+            <p>&copy; 2025 AppleStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
